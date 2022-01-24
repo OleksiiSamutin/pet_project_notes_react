@@ -1,0 +1,108 @@
+.main {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+.addNote__wrapper {
+  z-index: 10;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+
+  width: 50%;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.addNote__wrapper form {
+  height: 300px;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+}
+
+.invisible {
+  display: none;
+}
+.header {
+  background: #F2F79E;
+}
+.column_wrapper {
+  background: #A8D4AD;
+}
+.row .icon_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.row .icon_wrapper svg{
+  width: 20px;
+}
+.row {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .icon_wrapper, .row .buttons {
+  flex: 2
+}
+.row div {
+  flex: 4
+}
+
+.buttons__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row.column_wrapper .icon{
+  width: 35px;
+  /* margin-right: 10px; */
+  flex-grow: 0;
+}
+.tasks {
+  content: url('./pictures/tasks-solid.svg');
+}
+.ideas {
+  content: url('./pictures/lightbulb-regular.svg');
+}
+.random {
+  content: url('./pictures/random-solid.svg');
+}
+.edit {
+  content: url('./pictures/pen-solid.svg');
+}
+.archive {
+  content: url('./pictures/archive-solid.svg');
+}
+.delete {
+  content: url('./pictures/trash-solid.svg');
+}
+.buttons__wrapper div {
+  border-radius: 8px;
+  background: #92B9BD;
+  /* background-color; */
+  flex-grow: 0;
+  width: 18px;
+  padding: 4px;
+}
+.createNote {
+  border: none;
+  background-color: #967D69;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  margin-top: 10px;
+  float: right;
+}
+.createNote:disabled {
+  background-color: #f1c6a3
+}
