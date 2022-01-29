@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import Row from './components/Row'
-import AddNotePopup from './components/AddNotePopup';
+import AddNotePopup from './components/AddNotePopup/addNotePopup';
 import NotesTable from './components/NotesTable';
 import CategoryTable from './components/CategoryTable'
+
 function App() {
   return (
     <div className="main">
